@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Project</title>
+    <!--font awesome link starts here-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--font awesome link ends here-->
+    <!--css link starts here-->
+    <link rel="stylesheet" href="style.css">
+    <!--css link ends here-->
+</head>
+<body>
+    <!--nav starts here-->
+   
+    <nav id="menu" class="hidden">
+        <ul class="nav-upper flex">
+            <li class="nav__list"><a href="index.html" class="nav__link">Home</a></li>
+            <li class="nav__list"><a href="register.html" class="nav__link">Register</a></li>
+            <li class="nav__list"><a href="login.html" class="nav__link">Login</a></li>
+            <li class="nav__list"><a href="logout.html" class="nav__link">Logout</a></li>
+            <li class="nav__list"><a href="contact.html" class="nav__link">Contact</a></li>
+            <li class="nav__list"><a href="cart.html" class="nav__link">Cart</a></li>
+            <li class="nav__list"><a href="product.html" class="nav__link">Product</a></li>
+            <li class="nav__list"><a href="profile.html" class="nav__link"><img src="img/myself.jpg" class="profile-icon" alt="profile"></a></li>
+        </ul>
+        <ul class="nav-lower flex">
+            <li class="nav__list"><a href="index.html" class="nav__link nav__brand">Sohan Expresss</a></li>
+            <li class="nav__list"><a href="cart.html" class="nav__link">
+                <span>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Cart 2 Products - $124.40
+                </span>
+            </a></li>
+        </ul>
+    </nav>
+    <!--nav ends here-->
+    <!--main starts here-->
+    <main>
+   <div class="cart flex">
+   <div class="cart-items">
+    <div class="cart-items__heading card">
+        <h1>Shopping Cart[2 Items]</h1>
+        <div class="cart-items__action flex">
+            <label for="select">
+                <input type="checkbox" name="select" id="select">
+                Select All Items
+            </label>
+            <button class="btn"><i class="fa-regular fa-trash-can"></i></button>
+            <button class="btn">Shop More</button>
+        </div>
+    </div>
+    <div class="cart-item card flex">
+        <input type="checkbox" name="" id="">
+        <img src="img/headphone.jpeg" alt="product1" class="cart__img">
+        <div class="cart-desc">
+            <h3>Sony V-4 Headphone</h3>
+            <h4>Price : $255.99</h4>
+            <p>Free Shipping</p>
+        </div>
+        <div class="cart-item__action">
+            <button class="btn"><i class="fa-regular fa-trash-can"></i></button>
+            <button class="btn">
+                <i class="fa-solid fa-plus"></i>
+            </button>
+            <span>3</span>
+            <button class="btn"><i class="fa-solid fa-minus"></i></button>
+        </div>
+    </div>
+    <div class="cart-item card flex">
+        <input type="checkbox" name="" id="">
+        <img src="img/nike shoes.jpeg" alt="product2" class="cart__img">
+        <div class="cart-desc">
+            <h3>Nike Shoes</h3>
+            <h4>Price : $355.99</h4>
+            <p>Shipping Cost: $2.50</p>
+        </div>
+        <div class="cart-item__action">
+            <button class="btn"><i class="fa-regular fa-trash-can"></i></button>
+            <button class="btn">
+                <i class="fa-solid fa-plus"></i>
+            </button>
+            <span>3</span>
+            <button class="btn"><i class="fa-solid fa-minus"></i></button>
+        </div>
+       
+
+    </div>
+   </div>
+   <div class="cart-payment">
+    <div class="cart-payment__summary card">
+        <h2>Payment Summary</h2>
+        <div>
+            <p>Subtotal</p>
+            <p>$345</p>
+        </div>
+        <div>
+            <p>Shipping cost</p>
+            <p>$3</p>
+        </div>
+        <div>
+            <p>Total cost</p>
+            <p>$348</p>
+        </div>
+        <button class="btn cart-btn">Pay Now</button>
+    </div>
+    <div class="cart-payment__methods card">
+        <h2>Payment Methods</h2>
+        <div>
+            <i class="fa-brands fa-cc-visa fa-3x"></i>
+            <i class="fa-brands fa-apple-pay fa-3x"></i>
+            <i class="fa-brands fa-cc-amazon-pay fa-3x"></i>
+            <i class="fa-brands fa-cc-paypal fa-3x"></i>
+
+        </div>
+
+    </div>
+   </div>
+   </div>
+    </main>
+    <!--main ends here-->
+    <!--footer starts here-->
+    <footer class="footer flex">
+        <div class="footer-div flex">
+            <label for="subscribe">Subscribe For Newsletter: </label>
+            <input type="email" id="subscribe" name="subscribe" placeholder="Your Email Address" class="footer__input">
+            <button class="btn">Subscribe</button>
+        </div>
+        <div class="footer-div">
+            <p  class="footer__para">&copy;Copyright <strong>Sohan Express</strong>.All rights reserved</p>
+        </div>
+    </footer>
+     <!--footer ends here-->
+   
+    
+</body>
+</html>
